@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<title>My Personal Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+input[type=submit]:hover {
+  background-color: #006666;
+}
+input[type=submit] {
+  background-color: #009999;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+</style>
+<body class="w3-light-grey">
+
+<!--Navbar-->
+
+<div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+        <a href="#education" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Education</a>
+        <a href="#professionalexperience" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Professional Experience</a>
+        <a href="#projects" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projects</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+    </div>
+    
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+        <a href="#education" class="w3-bar-item w3-button">Education</a>
+        <a href="#professionalexperience" class="w3-bar-item w3-button">Professional Experience</a>
+        <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        </div>
+    </div>
+
+
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1000px;" >
+    
+
+</br>
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+     
+    <!--Name and Photo -->
+    <div class="w3-content w3-card w3-teal"  align="center"><p style="font-size:55px">Rodrigo Ladero García</p></div>
+    <div class="w3-container w3-margin-bottom w3-margin-top" style="padding: 0.5cm;vertical-align:middle;">
+        <div class="w3-row-padding">
+                    <div class="w3-twothird">
+                      <div class="w3-panel w3-card w3-teal w3-padding" align="center"><p p style="font-size:42px">Industrial Engineer</p></div>
+                    </div>
+                    <div class="w3-third">
+                      <div class="w3-cell-row">
+                        <div class="w3-cell w3-cell-middle" align="center">
+                          <img src="images/imagen_perfil.jpg" class="w3-round" style="max-width: 60% ;height: auto;">
+                        </div>
+                      </div>
+                            
+                    </div>
+        </div>
+    </div>
+
+    <!-- Professional Profile -->
+
+    <div class="w3-container w3-card w3-white w3-margin-bottom" style="padding-bottom: 0.5cm;">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-user-circle-o fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Professional Profile</h2>
+        <div class="w3-container" align="center">
+         <p style="font-size:19px;"><i>Ambitious, energetic and organized Industrial Engineer with experience in power
+            energy control systems. Interested and studious of the current, past and future
+            scientific and technological paradigms. I am excellent in working with other people
+            and I feel very comfortable with presentations in public.</i></p>
+        </div>
+    </div>
+
+    <!-- Education -->
+
+    <div class="w3-container w3-card w3-white w3-margin-bottom" style="padding-bottom: 0.5cm;" id="education">
+    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-university fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+    <div class="w3-container">
+        <div class="w3-row-padding">
+            <div class="w3-twothird">
+                    <h5 class="w3-opacity"><b>Degree in Industrial Engineer</b></h5>
+                    <p>Automation and Electronics Specializations</p>
+                    <p><i>Universidad Politécnica de Madrid</i></p>
+            </div>
+                
+            <div class="w3-third" align="center"> </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+            <div class="w3-row-padding">
+                <div class="w3-twothird">
+                        <h5 class="w3-opacity"><b>Master's Degree in Industrial Engineer</b></h5>
+                        <p>Automation and Electronics Specializations</p>
+                        <p><i>Universidad Politécnica de Madrid</i></p>
+                </div>
+                    
+                <div class="w3-third" align="left"> <img src="images/logo_politecnica.PNG" style="max-width: 40%;
+                    height: auto;"></div>
+            </div>
+    </div>
+    
+    <div class="w3-container">
+        <div class="w3-row-padding">
+            <div class="w3-twothird">
+                    <h5 class="w3-opacity"><b>Master’s Degree in Automation Engineering and Robotics</b></h5>
+                    <p><i>Universidad Politécnica de Madrid</i></p>
+            </div>
+                
+            <div class="w3-third" align="center"></div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Professional Experience -->
+
+    <div class="w3-container w3-card w3-white w3-margin-bottom" style="padding-bottom: 0.5cm;" id="professionalexperience">
+    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Professional Experience</h2>
+    <div class="w3-container">
+      <div class="w3-row-padding">
+          <div class="w3-twothird">
+                  <h5 class="w3-opacity"><b>Internship in Control of Electromechanical Systems for its implementation Geostationary Satellites</b></h5>
+                  <p>Application of algorithms and testing of the scanning mechanism unit SCAU (Scan Assembly Unit) and its electronic unit SCAE (SCAn Assembly Electronics) of Meteosat Third Generation system in collaboration with European Space Agency (ESA)</p>
+                  <p><i>SENER Aeroespacial</i></p>
+          </div>
+              
+          <div class="w3-third" align="center" style="padding-top: 30px;"> <img src="images/logo_sener.PNG" style="max-width: 40%; height: auto;"><br><br><img src="images/logo_esa.PNG" style="max-width: 40%; height: auto;"></div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <div class="w3-container">
+      <div class="w3-row-padding">
+          <div class="w3-twothird">
+                  <h5 class="w3-opacity"><b>Summer Internship in Distributed Control Systems for Industrial Processes</b></h5>
+                  <p>Design and implementation of PCS7-based control architectures for energy sector processes</p>
+                  <p><i>SIEMENS AG</i></p>
+          </div>
+              
+          <div class="w3-third" align="center" style="padding-top: 60px;"> <img src="images/logo_siemens.PNG" style="max-width: 40%; height: auto;"></div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <div class="w3-container">
+      <div class="w3-row-padding">
+          <div class="w3-twothird">
+                  <h5 class="w3-opacity"><b>Internship in Industrial Projects and Energy Production Plants</b></h5>
+                  <p>Detailed Design, Qualification and Supply of the Central Safety System-Nuclear (CSS-N) for First Plasma of the Nuclear Fusion Facility</p>
+                  <p><i>Empresarios Agrupados International</i></p>
+          </div>
+              
+          <div class="w3-third" align="center" style="padding-top: 20px;"> <img src="images/logo_eai.PNG" style="max-width: 40%; height: auto;"><br><br> <img src="images/logo_iter.PNG" style="max-width: 40%; height: auto;"></div>
+      </div>
+    </div>
+    </div>
+  
+
+  <!-- Projects -->
+
+  <div class="w3-container w3-card w3-white w3-margin-bottom" style="padding-bottom: 0.5cm;" id="projects">
+      <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-university fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
+       
+      <div class="w3-container">
+              <div class="w3-row-padding">
+                  <div class="w3-twothird">
+                          <h5 class="w3-opacity"><b>Degree Final Project: Development of an Autonomous Driving Vehicle in collaboration with SEAT</b></h5>
+                          
+                          <p><i>CSIC, CAR UPM</i></p>
+                  </div>
+                      
+                  <div class="w3-third" align="center" style="padding-top: 20px;"> <img src="images/logo_car.PNG" style="max-width: 40%; height: auto;"><br><br> <img src="images/logo_csic.PNG" style="max-width: 40%; height: auto;"></div>                     
+              </div>
+      </div>
+      
+      <br>
+      <hr>
+
+      <div class="w3-container">
+          <div class="w3-row-padding">
+              <div class="w3-twothird">
+                      <h5 class="w3-opacity"><b>Master’s Degree Project: Modeling and control by artificial intelligence of a steam turbine installation for energy production</b></h5>
+                      <p><i>CAR UPM</i></p>
+              </div>
+                  
+              <div class="w3-third" align="center" style="padding-top: 20px;"><img src="images/logo_car.PNG" style="max-width: 40%; height: auto;"></div>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="w3-container w3-card w3-white w3-margin-bottom" style="padding-bottom: 0.5cm;" id="contact">
+      <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-paper-plane fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Contact</h2>
+      
+      <div class="w3-container" style="border-radius: 5px; padding: 20px;">
+          <form action="mailto:r.ladero@alumnos.upm.es" method="post" enctype="text/plain">
+          <div class="w3-row-padding">
+              <div class="w3-twothird">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name.."> 
+
+                  <label for="lname">Email</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your email..">
+              </div>
+                  
+              <div class="w3-third" align="center" style="padding-top: 20px;"> 
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit" style="hover">
+              </div>                     
+          </div>
+        </form>
+      </div>
+
+  </div>
+
+</div>
+
+   
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+
+
+<script>
+        // Script for side navigation
+        function w3_open() {
+          var x = document.getElementById("mySidebar");
+          x.style.width = "300px";
+          x.style.paddingTop = "10%";
+          x.style.display = "block";
+        }
+        
+        // Close side navigation
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+        
+        // Used to toggle the menu on smaller screens when clicking on the menu button
+        function openNav() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        </script>
+
+</body>
+</html>
