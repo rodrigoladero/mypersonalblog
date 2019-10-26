@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<title>My Personal Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+input[type=submit]:hover {
+  background-color: #006666;
+}
+input[type=submit] {
+  background-color: #009999;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+.element {
+  position: relative;
+  top: 100%;
+  transform: translateY(+10%);
+}
+</style>
+<body bgcolor="#151515">
+
+<!--Navbar-->
+
+<div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+        <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>HOME</a>
+        <a href="index.html#education" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Education</a>
+        <a href="index.html#professionalexperience" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Professional Experience</a>
+        <a href="index.html#projects" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projects</a>
+        <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+    </div>
+    
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+        <a href="#education" class="w3-bar-item w3-button">Education</a>
+        <a href="#professionalexperience" class="w3-bar-item w3-button">Professional Experience</a>
+        <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        </div>
+    </div>
+
+
+
+
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1000px;" >
+
+
+
+</br>
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+ 
+    <div class="w3-container w3-card w3-white w3-margin-bottom" style="padding-bottom: 0.5cm;" id="contact">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-lightbulb w3-margin-right w3-xxlarge w3-text-teal"></i>Intelligent Steam Turbine</h2>
+        
+        
+  
+    </div> 
+
+  
+</div>
+
+   
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top" style="padding-bottom: 30px;">
+  <p>Find me on social media.</p>
+  <a href="https://www.linkedin.com/in/rodrigo-ladero/"><i class="fab fa-linkedin-in fa-2x w3-hover-opacity" style="size: 4px;"> </i></a>
+</footer>
+
+
+<script>
+        // Script for side navigation
+        function w3_open() {
+          var x = document.getElementById("mySidebar");
+          x.style.width = "300px";
+          x.style.paddingTop = "10%";
+          x.style.display = "block";
+        }
+        
+        // Close side navigation
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+        
+        // Used to toggle the menu on smaller screens when clicking on the menu button
+        function openNav() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        </script>
+
+</body>
+</html>
